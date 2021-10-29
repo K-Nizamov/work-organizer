@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    <title>Test-React-Exapmle</title>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <section class="form-section">
+            <article class="form-wrapper">
+                <div>Job:</div>
+                <input type="text" id="inputField" name="job-title" placeholder="Job">
+                <div>Priority:</div>
+                <select required name="description" id="jobDescription">
+                    <option value="" disabled selected hidden>Priority</option>
+                    <option value="Urgent">Urgent</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Trivial">Trivial</option>
+                </select>
+                <button type="submit" id="createBtn">Create</button>
+            </article>
+        </section>
+        <section class="record-section">
+            <article class="record-wrapper">
+                <h1 class="header">JOB LIST</h1>
+                <input class="header" id="search" type="text" placeholder="Search Job">
+            </article>
+            <article class="record-container" id="divContainer">
+            </article>
+        </section>
+    </div>
+    <div id="pop-up-screen">
+        <div id="pop-up-content">
+            <h2 id="pop-up-title">My job name</h2>
+            <select required id="pop-up-job-description">
+                <option value="Urgent">Urgent</option>
+                <option value="Regular">Regular</option>
+                <option value="Trivial">Trivial</option>
+            </select>
+        </div>
+        <button type="submit" id="update-btn">Update</button>
+    </div>
+    
+</body>
+<script src="/src/editFunction.js" type="module"></script>
+<script src="/src/searchFunction.js" type="module"></script>
+<script src="/src/deleteFunction.js" type="module"></script>
+<script src="/src/createContent.js" type="module"></script>
+</html>
+
